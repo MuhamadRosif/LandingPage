@@ -376,13 +376,13 @@
         }
 
         /* UKM Section */
-        .ukm-grid {
+        .pengalaman-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
         }
 
-        .ukm-card {
+        .pengalaman-card {
             background: var(--bg-glass);
             border-radius: 20px;
             overflow: hidden;
@@ -391,12 +391,12 @@
             backdrop-filter: blur(10px);
         }
 
-        .ukm-card:hover {
+        .pengalaman-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-2);
         }
 
-        .ukm-image {
+        .pengalaman-image {
             height: 250px;
             background: var(--gradient-1);
             display: flex;
@@ -406,17 +406,17 @@
             color: white;
         }
 
-        .ukm-content {
+        .pengalaman-content {
             padding: 2rem;
         }
 
-        .ukm-title {
+        .pengalaman-title {
             font-family: 'Space Grotesk', sans-serif;
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
 
-        .ukm-gallery {
+        .pengalaman-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             gap: 1rem;
@@ -458,6 +458,12 @@
             font-size: 4rem;
             color: white;
             transition: all 0.4s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .gallery-item:hover {
@@ -523,7 +529,7 @@
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#biodata">Biodata</a></li>
                 <li><a href="#jadwal">Jadwal Kuliah</a></li>
-                <li><a href="#ukm">UKM</a></li>
+                <li><a href="#pengalaman">Pengalaman Organisasi</a></li>
                 <li><a href="#gallery">Galeri</a></li>
             </ul>
             <div class="hamburger">
@@ -544,9 +550,9 @@
                 <h1 id="typewriter"></h1>
                 <p class="hero-subtitle">Mahasiswa Sistem Informasi</p>
                 <p class="hero-description">
-                    Halo! Saya Muhamad Rosif Al Khikam, mahasiswa semester 3 Sistem Informasi yang passionate 
+                    Halo! Saya Muhamad Rosif Al Khikam, mahasiswa semester 2 Sistem Informasi yang passionate 
                     dalam dunia programming dan desain. Setiap hari saya belajar hal baru, mengerjakan 
-                    tugas kuliah, dan aktif di berbagai UKM kampus.
+                    tugas kuliah, dan aktif dalam berbagai proyek sebagai Koordinator Lapangan di MyRobin.
                 </p>
                 <div class="daily-activities">
                     <div class="activity-card">
@@ -554,21 +560,21 @@
                             <i class="fas fa-book"></i>
                         </div>
                         <h3 class="activity-title">Kegiatan Harian</h3>
-                        <p>Kuliah pagi, coding siang hari, belajar malam. Selalu konsisten improve skill programming.</p>
+                        <p>Kuliah pagi, Coding, Selalu konsisten improve skill programming.</p>
                     </div>
                     <div class="activity-card">
                         <div class="activity-icon">
                             <i class="fas fa-gamepad"></i>
                         </div>
                         <h3 class="activity-title">Hobi</h3>
-                        <p>Main game online, nonton anime, olahraga futsal, dan eksplorasi framework baru.</p>
+                        <p>Tidur</p>
                     </div>
                     <div class="activity-card">
                         <div class="activity-icon">
                             <i class="fas fa-users"></i>
                         </div>
                         <h3 class="activity-title">Sosial</h3>
-                        <p>Aktif di komunitas programming kampus dan UKM, sharing knowledge sama temen-temen.</p>
+                        <p>Aktif dalam berbagai proyek sebagai Koordinator Lapangan di MyRobin.</p>
                     </div>
                 </div>
             </div>
@@ -598,7 +604,7 @@
                             </div>
                             <div>
                                 <strong>Tempat, Tanggal Lahir</strong><br>
-                                Jakarta, 15 Maret 2002
+                                Pekalongan, 21 November 2004
                             </div>
                         </div>
                         <div class="biodata-item">
@@ -607,7 +613,7 @@
                             </div>  
                             <div>
                                 <strong>Alamat</strong><br>
-                                Jl. Merdeka No. 123, Jakarta
+                                Jl. Pelita V, Pekalongan
                             </div>
                         </div> 
                         <div class="biodata-item">
@@ -616,7 +622,7 @@
                             </div>
                             <div>
                                 <strong>Nomor Telepon</strong><br>
-                                +62 812-3456-7890
+                                +62 878-1016-0931
                             </div>
                         </div>
                         <div class="biodata-item"> 
@@ -625,7 +631,7 @@
                             </div>
                             <div>
                                 <strong>Email</strong><br>
-                                rizky@example.com
+                                ahmadrosif331.com
                             </div>
                         </div>
                     </div>
@@ -641,49 +647,82 @@
                     <li class="schedule-item">
                         <div class="label">Senin</div>
                         <div class="details">
-                            <div class="schedule-meta">08:00 - 10:00</div>
-                            <div class="schedule-meta">Ruang A-101</div>
-                            <div class="schedule-meta">Algoritma & Pemrograman</div>
+                            <div class="schedule-meta">09:15 - 10:55</div>
+                            <div class="schedule-meta">Ruang B1.4</div>
+                            <div class="schedule-meta">Pemrograman Web I</div>
                         </div>
                     </li>
                     <li class="schedule-item">
                         <div class="label">Senin</div>
                         <div class="details">
-                            <div class="schedule-meta">10:30 - 12:30</div>
-                            <div class="schedule-meta">Ruang B-205</div>
-                            <div class="schedule-meta">Struktur Data</div>
+                            <div class="schedule-meta">11:00 - 112:40</div>
+                            <div class="schedule-meta">Ruang LAB 3</div>
+                            <div class="schedule-meta">Pemrograman Web I</div>
                         </div>
                     </li>
                     <li class="schedule-item">
                         <div class="label">Selasa</div>
                         <div class="details">
-                            <div class="schedule-meta">08:00 - 10:00</div>
-                            <div class="schedule-meta">Ruang C-310</div>
-                            <div class="schedule-meta">Web Programming</div>
+                            <div class="schedule-meta">09:15 - 10:55</div>
+                            <div class="schedule-meta">Ruang C.5</div>
+                            <div class="schedule-meta">Sistem Basis Data</div>
+                        </div>
+                    </li>
+                    <li class="schedule-item">
+                        <div class="label">Selasa</div>
+                        <div class="details">
+                            <div class="schedule-meta">11:00- 11:40</div>
+                            <div class="schedule-meta">Ruang LAB 3</div>
+                            <div class="schedule-meta">Sistem Basis Data</div>
                         </div>
                     </li>
                     <li class="schedule-item">
                         <div class="label">Rabu</div>
                         <div class="details">
-                            <div class="schedule-meta">13:00 - 15:00</div>
-                            <div class="schedule-meta">Ruang D-102</div>
-                            <div class="schedule-meta">Database Sistem</div>
+                            <div class="schedule-meta">11:00 - 12:40</div>
+                            <div class="schedule-meta">Ruang A1.1</div>
+                            <div class="schedule-meta">Analisa Sistem Informasi</div>
+                        </div>
+                    </li>
+                    <li class="schedule-item">
+                        <div class="label">Rabu</div>
+                        <div class="details">
+                            <div class="schedule-meta">13:00 - 14:40 </div>
+                            <div class="schedule-meta">Ruang A1.2</div>
+                            <div class="schedule-meta">BFundamental Kecerdasan Buatan</div>
+                        </div>
+                    </li>
+                    <li class="schedule-item">
+                        <div class="label">Rabu</div>
+                        <div class="details">
+                            <div class="schedule-meta">15:00 - 16:40</div>
+                            <div class="schedule-meta">Ruang A1.1</div>
+                            <div class="schedule-meta">Pendidikan Agama</div>
                         </div>
                     </li>
                     <li class="schedule-item">
                         <div class="label">Kamis</div>
                         <div class="details">
-                            <div class="schedule-meta">13:30 - 15:30</div>
-                            <div class="schedule-meta">Ruang A-105</div>
-                            <div class="schedule-meta">Praktikum Web</div>
+                            <div class="schedule-meta">07:30 - 09:10</div>
+                            <div class="schedule-meta">Ruang B1.2</div>
+                            <div class="schedule-meta">PBO</div>
                         </div>
                     </li>
                     <li class="schedule-item">
-                        <div class="label">Jumat</div>
+                        <div class="label">Kamis</div>
                         <div class="details">
-                            <div class="schedule-meta">10:00 - 12:00</div>
-                            <div class="schedule-meta">Ruang B-210</div>
-                            <div class="schedule-meta">Matematika Diskrit</div>
+                            <div class="schedule-meta">09:15 - 10:55</div>
+                            <div class="schedule-meta">Ruang LAB 7</div>
+                            <div class="schedule-meta">PBO</div>
+                    </li>
+                    <li class="schedule-item">
+                        <div class="label">kamis</div>
+                        <div class="details">
+                            <div class="schedule-meta">11:00 - 12:40</div>
+                            <div class="schedule-meta">Ruang D1.1</div>
+                            <div class="schedule-meta">BAkuntansi Dasar</div>
+                        </div>
+                    </li>
                         </div>
                     </li>
                 </ul>
@@ -691,29 +730,29 @@
         </section>
 
         <!-- UKM Section -->
-        <section id="ukm">
+        <section id="pengalaman">
             <div class="container">
-                <h2 class="section-title">UKM Kampus</h2>
-                <div class="ukm-grid">
-                    <div class="ukm-card">
-                        <div class="ukm-image"><i class="fas fa-guitar"></i></div>
-                        <div class="ukm-content">
-                            <h3 class="ukm-title">UKM Musik</h3>
-                            <p>Saya anggota aktif UKM musik sebagai gitaris dan vokalis.</p>
+                <h2 class="section-title">Pengalaman Organisasi</h2>
+                <div class="pengalaman-grid">
+                    <div class="pengalaman-card">
+                        <div class="pengalaman-image"><i class="fas fa-guitar"></i></div>
+                        <div class="pengalaman-content">
+                            <h3 class="pengalaman-title">Pastika</h3>
+                            <p>Saya anggota aktif Pramuka SMK Syafii Akrom sebagai Kirani Putra.</p>
                         </div>
                     </div>
-                    <div class="ukm-card">
-                        <div class="ukm-image"><i class="fas fa-futbol"></i></div>
-                        <div class="ukm-content">
-                            <h3 class="ukm-title">UKM Olahraga</h3>
-                            <p>Tim futsal kampus, latihan rutin setiap minggu.</p>
+                    <div class="pengalaman-card">
+                        <div class="pengalaman-image"><i class="fas fa-futbol"></i></div>
+                        <div class="pengalaman-content">
+                            <h3 class="pengalaman-title">Ubaloka Pekalongan</h3>
+                            <p>Ubaloka adalah Unit Bantu Pertolongan Pramuka, Latihan satu bulan sekali.</p>
                         </div>
                     </div>
-                    <div class="ukm-card">
-                        <div class="ukm-image"><i class="fas fa-laptop-code"></i></div>
-                        <div class="ukm-content">
-                            <h3 class="ukm-title">UKM Programming</h3>
-                            <p>Membangun aplikasi bersama dan mengikuti kompetisi hackathon.</p>
+                    <div class="pengalaman-card">
+                        <div class="pengalaman-image"><i class="fas fa-laptop-code"></i></div>
+                        <div class="pengalaman-content">
+                            <h3 class="pengalaman-title">Atas Indonesia</h3>
+                            <p>Atas indonesia adalah perkumpulan Pramuka Garuda se-indonesia.</p>
                         </div>
                     </div>
                 </div>
@@ -727,15 +766,15 @@
                 <div class="gallery-grid">
                     <div class="gallery-item">
                         <span>📷</span>
-                        <div class="gallery-overlay">Proyek UI/UX</div>
+                        <div class="gallery-overlay">Pastika</div>
                     </div>
                     <div class="gallery-item">
                         <span>💻</span>
-                        <div class="gallery-overlay">Hackathon</div>
+                        <div class="gallery-overlay">Ubaloka</div>
                     </div>
                     <div class="gallery-item">
                         <span>🛠️</span>
-                        <div class="gallery-overlay">Deploy App</div>
+                        <div class="gallery-overlay">Atas Indonesia</div>
                     </div>
                 </div>
             </div>
@@ -743,7 +782,7 @@
     </main>
 
     <footer style="text-align:center; padding:2rem 1rem; color:var(--text-secondary); background:rgba(10,10,15,0.6);">
-        © 2026 Muhammad Rizky Ramadhan • All Rights Reserved
+        © 2026 Muhamad Rosif Al Khikam • All Rights Reserved
     </footer>
 
     <script>
